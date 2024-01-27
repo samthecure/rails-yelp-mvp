@@ -1,0 +1,9 @@
+<div>
+  <%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name, label: "Nom du restaurant"%>
+  <%= f.input :address, label: "Adresse" %>
+  <%= f.input :phone_number, label: "Numéro de téléphone"  %>
+  <%= f.input :category, label: "Catégorie", collection: Restaurant::CATEGORIES, prompt: "Sélectionnez une catégorie" %>
+          <%= f.submit "Créer", class: 'btn btn-primary' %>
+  <% end %>
+</div>

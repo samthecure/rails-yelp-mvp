@@ -4,37 +4,37 @@ Restaurant.destroy_all
 # Crée 5 restaurants avec des informations personnalisées
 Restaurant.create!(
   name: "Chez Antoine",
-  address: "123 rue de la bonne bouffe",
+  address: "123 boulevard Voltaire",
   phone_number: "01-22-33-44-55",
-  category: "french"
+  category: "français"
 )
 
 Restaurant.create!(
   name: "Sakura Sushi",
-  address: "12 rue du japon",
-  phone_number: "555-5678",
-  category: "japanese"
+  address: "12 rue de Montreuil",
+  phone_number: "01-12-12-43-44",
+  category: "japonais"
 )
 
 Restaurant.create!(
   name: "Chez Andrea",
-  address:"12 rue de la pizza",
+  address:"12 rue de rome",
   phone_number: "01-12-13-14-15",
-  category:"italian"
+  category:"italien"
 )
 
 Restaurant.create!(
   name: "La bonne frite",
-  address:"21 rue des statues",
+  address:"21 boulevard Haussmann",
   phone_number: "01-32-98-14-81",
-  category:"belgian"
+  category:"belge"
 )
 
 Restaurant.create!(
-  name: "Le petit Pekinois",
-  address:"176 rue du camarade Mao",
+  name: "Chez Xu",
+  address:"176 rue du camarade",
   phone_number: "01-02-10-64-00",
-  category:"chinese"
+  category:"chinois"
 )
 
 puts 'Seed completed successfully!'

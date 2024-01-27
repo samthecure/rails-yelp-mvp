@@ -1,0 +1,23 @@
+<h1><%= @restaurant.name %></h1>
+
+<table class="mt-3 table table-bordered">
+  <tbody>
+  <h3>Infos:</h3>
+    <tr>
+      <th scope="row">Adresse</th>
+      <td> <%= @restaurant.address %> </td>
+    </tr>
+
+    <tr>
+      <th scope="row">Numéro de téléphone</th>
+      <td> <%= @restaurant.phone_number %> </td>
+    </tr>
+
+    <tr>
+      <th scope="row">Categorie</th>
+      <td> <%= @restaurant.category.capitalize %> </td>
+    </tr>
+
+  </tbody>
+</table>
+ <span> <%= link_to "Index", root_path %></span>
