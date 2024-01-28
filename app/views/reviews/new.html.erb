@@ -1,0 +1,9 @@
+<h1><%= @restaurant.name %></h1>
+<div>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+<%= f.input  :content, label: 'Rédigez votre avis sur ce restaurant' %>
+<%= f.input :rating,  label: "Note", collection: Review::RATING, prompt: "Sélectionnez une note" %>
+
+<%= f.submit "Créer", class:'btn btn-primary' %>
+<% end %>
+</div>
